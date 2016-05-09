@@ -68,7 +68,7 @@ If you happen to prefer things DSL-style, the `open` method will also let you op
 ``` ruby
 require 'psd'
 
-PSD.open('path/to/file.psd') do
+PSD.open('path/to/file.psd') do |psd|
   p tree.to_hash
 end
 ```
